@@ -1,0 +1,169 @@
+body{
+    background-color: rgb(237,238,240) ;
+}
+header {
+    height:50px;
+    background-color: rgb(74,118,168);
+    display:flex;
+    flex-direction:row;
+}
+header div{
+    margin-top: 8px;
+    margin-left: 200px;
+}
+
+header ::placeholder {
+    color: rgb(143,173,200);
+}
+header input[type="text"]{
+    background-color: rgb(34,75,122);
+    border-radius:20px;
+    color: red/*rgb(143,173,200)*/;
+    border:none;
+    background-image: url('search.png');
+    background-repeat: no-repeat;
+    width:200px;
+    padding:7px 7px;
+}
+
+.body{
+    margin-top:20px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+.body img{
+    margin-top:30px;
+    
+}
+
+.links{
+    display:flex;
+    flex-direction:row;
+    text-align:center;
+    margin:20px;
+    font-size:13px;
+}
+
+aside{
+    text-align:center;
+}
+
+
+
+
+
+.logIn{
+    background-color:#fff;
+    height: fit-content;
+}
+
+form {
+    display:flex;
+    flex-direction:column;
+   
+}
+ 
+form input[type="text"],
+input[type="password"]{
+    font-size:12px;
+    padding:10px 10px;
+    width:270px;
+    margin:20px 0 0 20px;
+    border-radius:2px;
+    border:1px solid lightgrey;
+}
+
+ form input[type="submit"]{
+    border:none;
+    border-radius:2px;
+    color:#fff;
+    padding:7px 30px;
+    margin:20px 15px 20px 20px;
+    background-color:rgb(81, 129, 184);
+}
+
+ .anketaBlock{
+    background-color:white;
+    height: fit-content;
+}
+
+.anketa {
+    display:flex;
+    flex-direction:column;
+    margin:25px;
+}
+
+.anketa h3{
+    text-align:center;
+    margin:25px 0 0 0;
+}
+
+ .signUp{
+    text-align:center;
+    margin:0;
+    font-size:13px;
+}
+
+.anketa .tittle{
+    margin:10px 0 5px 0 ;
+    font-size:13px;
+}
+
+.date{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+input[list="day"],
+input[list="year"]{
+    width:50px;
+    padding:0 10px;
+    border-radius:2px;
+     border:1px solid lightgrey;
+}
+
+input[list="month"]{    
+    width:70px;
+    padding:7px 7px;
+    border-radius:2px;
+     border:1px solid lightgrey;
+}
+ 
+.anketaBlock input[type="text"]
+{
+    margin-top:20px;
+    font-size:12px;
+    padding:10px 10px;
+    width:270px;
+    border-radius:2px;
+    border:1px solid lightgrey;
+}
+
+.gender{
+    display:flex;
+    flex-direction:row;
+    margin:0 10px 0 0;
+    font-size:15px;
+    text-align:center;
+}
+
+input[type="submit"]{
+    border:none;
+    border-radius:4px;
+    color:#fff;
+    padding:10px 30px;
+    margin:10px 0;
+    background-color:rgb(95, 176, 83);
+}
+
+input[class="facebookButtom"]{
+    border:none;
+    border-radius:4px;
+    color:#fff;
+    padding:10px 30px;
+    margin:10px 0;
+    background-color:rgb(81, 129, 184);
+}
