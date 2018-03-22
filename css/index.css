@@ -1,5 +1,6 @@
 body{
     background-color: rgb(237,238,240) ;
+    font-family:Tahoma;
 }
 header {
     height:50px;
@@ -9,7 +10,7 @@ header {
 }
 header div{
     margin-top: 8px;
-    margin-left: 200px;
+    margin-left: 170px;
 }
 
 header ::placeholder {
@@ -18,13 +19,24 @@ header ::placeholder {
 header input[type="text"]{
     background-color: rgb(34,75,122);
     border-radius:20px;
-    color: red/*rgb(143,173,200)*/;
+    color: rgb(143,173,200);
     border:none;
-    background-image: url('search.png');
-    background-repeat: no-repeat;
     width:200px;
     padding:7px 7px;
+    background-image: url('search.png');
+    background-repeat: no-repeat;
+    background-position: 7px 7px; 
+    padding: 7px 20px 7px 40px;
+    
 }
+
+header input[type="text"]:focus{
+    background-color:white;
+    background-image: url('searchFocus.png');
+    background-position: 7px 7px; 
+    outline: none;
+}
+
 
 .body{
     margin-top:20px;
@@ -35,14 +47,29 @@ header input[type="text"]{
 
 .body img{
     margin-top:30px;
-    
+}
+
+.body p{
+    font-size:14px;
+}
+
+h1 {
+    font-weight:normal;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(42,88,143);
 }
 
 .links{
     display:flex;
     flex-direction:row;
-    text-align:center;
-    margin:20px;
+    color: rgb(42,88,143);
+}
+
+.links label{
+    margin:0 auto;
     font-size:13px;
 }
 
@@ -50,7 +77,18 @@ aside{
     text-align:center;
 }
 
+aside p:last-child,
+form a{
+     color: rgb(42,88,143);
+     font-size:13px;
+     
+}
 
+ p a:hover , 
+ form a:hover{
+     color: rgb(42,88,143);
+     text-decoration: underline;
+}
 
 
 
@@ -58,6 +96,9 @@ aside{
     background-color:#fff;
     height: fit-content;
 }
+
+
+
 
 form {
     display:flex;
@@ -73,6 +114,11 @@ input[type="password"]{
     margin:20px 0 0 20px;
     border-radius:2px;
     border:1px solid lightgrey;
+}
+
+form input[type="text"],
+input[type="password"]:focus{
+     outline: none;
 }
 
  form input[type="submit"]{
@@ -98,23 +144,31 @@ input[type="password"]{
 .anketa h3{
     text-align:center;
     margin:25px 0 0 0;
+    font-weight:normal;
 }
 
- .signUp{
+.anketa .signUp{
     text-align:center;
-    margin:0;
+    margin:5px 0 0 0 ;
     font-size:13px;
+    color:rgb(101,101,101);
 }
 
 .anketa .tittle{
     margin:10px 0 5px 0 ;
     font-size:13px;
+    color:rgb(101,101,101);
 }
 
 .date{
     display:flex;
     flex-direction:row;
     justify-content:space-between;
+}
+
+.gender label{
+    margin-right:20px;
+    font-size:13px;
 }
 
 input[list="day"],
@@ -126,7 +180,7 @@ input[list="year"]{
 }
 
 input[list="month"]{    
-    width:70px;
+    width:90px;
     padding:7px 7px;
     border-radius:2px;
      border:1px solid lightgrey;
@@ -140,6 +194,10 @@ input[list="month"]{
     width:270px;
     border-radius:2px;
     border:1px solid lightgrey;
+}
+.anketaBlock input[type="text"]:focus
+{
+   outline:none;
 }
 
 .gender{
