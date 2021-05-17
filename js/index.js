@@ -21,3 +21,11 @@ document.getElementById("xhr-get-content2").addEventListener("click",e =>{
   respons.open('get','index-for-English.html?r='+Math.random());
   respons.send();
 });
+
+const login = document.querySelector('#login');
+login.addEventListener('focus',()=>{
+   console.log('sfdvsd')
+   login.value= "sf";
+})
+
+console.log('dfgfjbndkgjf')

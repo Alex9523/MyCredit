@@ -1,231 +1,107 @@
 nav {
   color:white;
 }
+
+.logIn{
+    margin-bottom: 10px;
+}
 body{
-    background-color: rgb(237,238,240) ;
+    background-color: white ;
     font-family:Tahoma;
-}
-header {
-    height:40px;
-    margin:-8px;
-    background-color: rgb(74,118,168);
-    display:flex;
-    flex-direction:row;
-}
-header div{
-    margin-top: 8px;
-    margin-left: 170px;
+    padding: 16px 24px;
 }
 
-header ::placeholder {
-    color: rgb(143,173,200);
+.h1{
+    font-weight: 600;
+    font-size: 20px;
+    color: #0055b8;
+    margin-bottom: 20px;
+    margin-top: 80px;
 }
-header input[type="text"]{
-    background-color: rgb(34,75,122);
-    border-radius:20px;
-    color: rgb(143,173,200);
-    border:none;
-    width:200px;
-    padding:5px 5px;
-    background-image: url('search.png');
-    background-repeat: no-repeat;
-    background-position: 7px 7px; 
-    padding: 5px 20px 5px 40px;
+
+input{
+    border: 0;
+    background-color: transparent;
+    border-bottom: solid 1px #e9e9e9;
+    padding: 20px 0 6px;
+    position: relative;
+    z-index: 1;
+    outline: 0;
+    width: 100%;
+    border-radius: 0;
+}
+
+.form-container{
+    position: relative;
+    margin-bottom:40px;
+    display: flex;
+}
+
+.form-label{
+    font-size: 16px;
+    line-height: 1;
+    color: #72838f;
+    opacity: .5;
+    margin-bottom: 0;
+    font-weight: 300;
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+    position: absolute;
+    left: 0;
+    right: auto;
+    top: 20px;
+    z-index: 0;
+}
+
+input:focus + .form-label{
+        top: 0px; 
+        font-size: 10px !important;
+    }
     
+
+
+.button{
+    background: linear-gradient(
+90deg
+,#01cf8f 14.58%,#0fadac 54.5%,#1f91ca 99.97%);
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    padding: 0px;
+    font-size: 18px;
 }
 
-header input[type="text"]:focus{
-    background-color:white;
-    background-image: url('searchFocus.png');
-    background-position: 7px 7px; 
-    outline: none;
+.help{
+    border: solid 1px;
+    font-family: "icomoon"!important;
+    border-radius: 50%;
+    color: #0055b8;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
 }
 
-
-.body{
-    margin-top:20px;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-around;
+.btn{
+    color:'white';
 }
 
-.body img{
-    margin-top:30px;
+a{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    color: #15a3e8;
+    margin-top: 10px;
 }
 
-.body p{
-    font-size:14px;
-}
-
-h1 {
-    font-weight:normal;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(42,88,143);
-}
-
-.links{
-    display:flex;
-    flex-direction:row;
-    color: rgb(42,88,143);
-}
-
-.links label{
-    margin:0 auto;
-    font-size:13px;
-}
-
-aside{
-    text-align:center;
-}
-
-aside p:last-child,
-form a{
-     color: rgb(42,88,143);
-     font-size:13px;
-     
-}
-
- p a:hover , 
- form a:hover{
-     color: rgb(42,88,143);
-     text-decoration: underline;
-}
-
-
-
-/*.logIn{
-//    background-color:#fff;
-//height: fit-content;
-}*/
-
-
-
-
-form {
-    display:flex;
-    flex-direction:column;
-   
-}
- 
-form input[type="text"],
-input[type="password"]{
-    font-size:12px;
-    padding:10px 10px;
-    width:270px;
-    margin:20px 0 0 20px;
-    border-radius:2px;
-    border:1px solid lightgrey;
-}
-
-form input[type="text"],
-input[type="password"]:focus{
-     outline: none;
-}
-
- form input[type="submit"]{
-    border:none;
-    border-radius:2px;
-    color:#000;
-    padding:7px 30px;
-    margin:20px 15px 20px 20px;
-    background-color:#fff;
-}
-
- .anketaBlock{
-    background-color:white;
-    height: fit-content;
-}
-
-.anketa {
-    display:flex;
-    flex-direction:column;
-    margin:25px;
-}
-
-.anketa h3{
-    text-align:center;
-    margin:25px 0 0 0;
-    font-weight:normal;
-}
-
-.anketa .signUp{
-    text-align:center;
-    margin:5px 0 0 0 ;
-    font-size:13px;
-    color:rgb(101,101,101);
-}
-
-.anketa .tittle{
-    margin:10px 0 5px 0 ;
-    font-size:13px;
-    color:rgb(101,101,101);
-}
-
-.date{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-}
-
-.gender label{
-    margin-right:20px;
-    font-size:13px;
-}
-
-input[list="day"],
-input[list="year"]{
-    width:50px;
-    padding:0 10px;
-    border-radius:2px;
-     border:1px solid lightgrey;
-}
-
-input[list="month"]{    
-    width:90px;
-    padding:7px 7px;
-    border-radius:2px;
-     border:1px solid lightgrey;
-}
- 
-.anketaBlock input[type="text"]
-{
-    margin-top:20px;
-    font-size:12px;
-    padding:10px 10px;
-    width:270px;
-    border-radius:2px;
-    border:1px solid lightgrey;
-}
-.anketaBlock input[type="text"]:focus
-{
-   outline:none;
-}
-
-.gender{
-    display:flex;
-    flex-direction:row;
-    margin:0 10px 0 0;
-    font-size:15px;
-    text-align:center;
-}
-
-input[type="submit"]{
-    border:none;
-    border-radius:4px;
-    color:#fff;
-    padding:10px 30px;
-    margin:10px 0;
-    background-color:rgb(95, 176, 83);
-}
-
-input[class="facebookButtom"]{
-    border:none;
-    border-radius:4px;
-    color:#fff;
-    padding:10px 30px;
-    margin:10px 0;
-    background-color:rgb(81, 129, 184);
+p{
+    font-size: 16px;
+    line-height: 1;
+    color: #003764;
+    margin-top: 30px;
 }
